@@ -13,4 +13,22 @@ A structured LaTeX template for submissions to the
 
 ---
 
+## Project Structure
+```
+├── main.tex                  # Entry point – only \input{} calls
+├── packages.tex              # All \usepackage{} declarations
+├── settings.tex              # Package configurations & language toggle
+├── metadata.tex              # Title, authors, abstract, keywords
+├── references.bib            # Bibliography database
+├── figures/                  # Place all figures here
+└── sections/
+    ├── 01_introduction.tex
+    ├── 02_related_work.tex
+    ├── 03_method.tex
+    ├── 04_results.tex
+    ├── 05_discussion.tex
+    └── 06_conclusion.tex
+```
+
+---
 
