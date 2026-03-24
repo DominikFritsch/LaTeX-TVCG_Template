@@ -1,0 +1,49 @@
+% ============================================================
+%  settings.tex
+%  LaTeX kernel settings & Package configurations
+% ============================================================
+
+% --- Hyphenation ---------------------------------------------
+\hyphenation{IEEE-Xplore
+             Unreal-Engine
+             Frame-lock
+             Gen-lock
+             Switch-board}
+
+% --- Language Toggle -----------------------------------------
+\newif\ifgerman
+\germantrue          % ← change to \germanfalse for English
+
+
+% --- hyperref ------------------------------------------------
+% The .pdf metadata defined via \hypersetup (pdftitle, pdfauthor, pdfkeywords, pdfsubject)
+% ensures proper identification of the document in PDF viewers, search
+% tools, and digital libraries.
+\hypersetup{
+    colorlinks  = true,
+    linkcolor   = blue,
+    citecolor   = blue,
+    urlcolor    = blue,
+    pdftitle    = {TODO: Enter Paper Title},
+    pdfauthor   = {TODO: Enter Author Name},
+    pdfkeywords = {TODO: Enter Keywords},
+    pdfsubject  = {TODO: Enter Subject}
+}
+
+% --- cleveref ------------------------------------------------
+\crefname{figure}{Fig.}{Figs.}
+\crefname{table}{Tab.}{Tabs.}
+\crefname{equation}{Eq.}{Eqs.}
+\crefname{section}{Sec.}{Secs.}
+
+% --- graphicx ------------------------------------------------
+% Default search path for figures
+\graphicspath{{figures/}}
+
+% --- xcolor --------------------------------------------------
+% Custom colors
+\definecolor{ndisplay-blue}{HTML}{0057A8}
+\definecolor{ue5-orange}{HTML}{E77B1C}
+
+% --- microtype -----------------------------------------------
+\microtypesetup{protrusion=true, expansion=true}

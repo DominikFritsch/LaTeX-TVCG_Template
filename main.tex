@@ -13,17 +13,26 @@
 % ── Metadata (Title, Authors, Abstract, Keywords) ───────────
 \input{metadata}
 
+
 % ── Sections ────────────────────────────────────────────────
-\input{sections/01_introduction.tex}
-\input{sections/02_related_work.tex}
-\input{sections/03_method.tex}
-\input{sections/04_results.tex}
-\input{sections/05_discussion.tex}
-\input{sections/06_conclusion.tex}
+% For change of language, set \germantrue or \germanfalse in settings.tex
+\ifgerman
+    \selectlanguage{ngerman}
+    \def\lang{de}
+\else
+    \selectlanguage{english}
+    \def\lang{en}
+\fi
 
+\input{sections/\lang/01_introduction.tex}
+\input{sections/\lang/02_related_work.tex}
+\input{sections/\lang/03_method.tex}
+\input{sections/\lang/04_results.tex}
+\input{sections/\lang/05_discussion.tex}
+\input{sections/\lang/06_conclusion.tex}
 
-This is a text citation \cite{test}. This is a placeholder for some content \blindtext[4]
 \balance
+This is a text citation \cite{test}. This is a placeholder for some content \blindtext[4]
 
 % ── Bibliography ────────────────────────────────────────────
 \bibliographystyle{IEEEtran}
