@@ -43,3 +43,9 @@ pdflatex main.tex
 ```
 
 ---
+
+## References
+
+- [TVCG Official Website](https://www.computer.org/csdl/journal/tg)
+- [TVCG Author Guidelines](https://www.computer.org/digital-library/journals/tg/cfp-ieee-transactions-on-visualization-computer-graphics)
+- [IEEEtran LaTeX Template](https://template-selector.ieee.org/)
