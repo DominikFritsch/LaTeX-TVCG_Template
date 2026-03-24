@@ -32,3 +32,14 @@ A structured LaTeX template for submissions to the
 
 ---
 
+---
+
+## Compilation
+```bash
+pdflatex main.tex
+bibtex main
+pdflatex main.tex
+pdflatex main.tex
+```
+
+---
