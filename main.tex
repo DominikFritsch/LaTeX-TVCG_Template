@@ -1,3 +1,8 @@
+% ============================================================
+%  maint.tex
+%  Entry point for the LaTeX document.
+% ============================================================
+
 \documentclass[journal]{IEEEtran}
 
 % ── Packages ────────────────────────────────────────────────
@@ -26,13 +31,14 @@
 
 \input{sections/\lang/01_introduction.tex}
 \input{sections/\lang/02_related_work.tex}
+
+\input{example.tex} % TODO: Remove example.tex before final submission. This file contains template examples for figures, tables, equations and references.
+
 \input{sections/\lang/03_method.tex}
 \input{sections/\lang/04_results.tex}
 \input{sections/\lang/05_discussion.tex}
 \input{sections/\lang/06_conclusion.tex}
-
 \balance
-This is a text citation \cite{test}. This is a placeholder for some content \blindtext[4]
 
 % ── Bibliography ────────────────────────────────────────────
 \bibliographystyle{IEEEtran}
