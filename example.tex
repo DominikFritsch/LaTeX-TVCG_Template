@@ -7,7 +7,6 @@
 % ============================================================
 
 
-
 % ── Figure ──────────────────────────────────────────────────
 \blindtext
 \begin{figure}[!t]
@@ -50,14 +49,36 @@
     \label{eq:example}
 \end{equation}
 
+% ── Inline Code ─────────────────────────────────────────────
+\blindtext
+The function \texttt{SomeFunction()} is called here.
+
+% ── Code Listing ────────────────────────────────────────────
+\blindtext
+\begin{lstlisting}[language=C++,
+                   caption={An example code listing.},
+                   label={lst:example}]
+void SomeFunction() {
+    // This is a comment
+    int x = 42;
+}
+\end{lstlisting}
+
 % ── References ──────────────────────────────────────────────
-\blindtext
+\noindent
 As shown in \cref{fig:example}, the results indicate...
-\blindtext
+\newline
+\newline
 As defined in \cref{eq:example}, the formula shows...
-\blindtext
+\newline
+\newline
 See \cref{tab:example} for an overview.
-\blindtext
+\newline
+\newline
 This has been demonstrated in prior work \cite{test}.
-\blindtext
-If you need multiple citations, you can use \cite{test, test, test}.
+\newline
+\newline
+If you need multiple citations, you can use \cite{test, test}.
+\newline
+\newline
+As shown in listing \ref{lst:example}, the function...
