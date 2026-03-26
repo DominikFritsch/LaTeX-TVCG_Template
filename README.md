@@ -32,6 +32,18 @@ A structured LaTeX template for submissions to the
 
 ---
 
+## Language Toggle
+
+This template supports switching between **German** and **English**
+by changing a single line in `settings.tex`:
+```latex
+\germantrue     % German
+\germanfalse    % English
+```
+
+This single switch controls both the Babel language settings and
+all section content simultaneously.
+
 ---
 
 ## Compilation
