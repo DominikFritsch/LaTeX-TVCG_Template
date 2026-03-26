@@ -25,6 +25,21 @@
     \label{fig:example_wide}
 \end{figure*}
 
+% ── Figure side by side ────────────────────────────
+\blindtext
+\begin{figure}[!t]
+    \centering
+    \subfloat[\label{fig:left}]{
+        \includegraphics[width=0.45\columnwidth]{figures/example.png}
+    }
+    \hfil
+    \subfloat[\label{fig:right}]{
+        \includegraphics[width=0.45\columnwidth]{figures/example.png}
+    }
+    \caption{Two figures side by side.}
+    \label{fig:sidebyside}
+\end{figure}
+
 % ── Table ───────────────────────────────────────────────────
 \blindtext
 \begin{table}
