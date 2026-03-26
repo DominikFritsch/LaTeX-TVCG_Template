@@ -19,6 +19,8 @@ A structured LaTeX template for submissions to the
 ├── packages.tex              # All \usepackage{} declarations
 ├── settings.tex              # Package configurations & language toggle
 ├── metadata.tex              # Title, authors, abstract, keywords
+├── biography.tex             # Author biography and photo
+├── example.tex               # Minimal examples for figures, tables, equations
 ├── references.bib            # Bibliography database
 ├── figures/                  # Place all figures here
 └── sections/
