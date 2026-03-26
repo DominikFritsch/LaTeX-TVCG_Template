@@ -30,6 +30,12 @@
     pdfsubject  = {TODO: Enter Subject}
 }
 
+% --- Figure & table caption prefix --------------------------
+\makeatletter
+\renewcommand{\fnum@figure}{Fig.~\thefigure}
+\renewcommand{\fnum@table}{TABLE~\thetable}
+\makeatother
+
 % --- cleveref ------------------------------------------------
 \crefname{figure}{Fig.}{Figs.}
 \crefname{table}{Tab.}{Tabs.}
