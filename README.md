@@ -1,7 +1,7 @@
 # LaTeX_TVCG_Template
 
 A structured LaTeX template for submissions to the
-**IEEE Transactions on Visualization and Computer Graphics (TVCG)**.
+**IEEE Transactions on Visualization and Computer Graphics (TVCG)**. Features bilingual support (DE/EN), modular file structure, and minimal examples for figures, tables, equations, code listings and citations.
 
 ---
 
