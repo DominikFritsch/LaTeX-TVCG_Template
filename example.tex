@@ -40,6 +40,21 @@
     \label{fig:sidebyside}
 \end{figure}
 
+% ── Figure side by side spanning both columns ────────────────
+\blindtext
+\begin{figure*}[!t]
+    \centering
+    \subfloat[\label{fig:wide_left}]{
+        \includegraphics[width=0.45\textwidth]{figures/example.png}
+    }
+    \hfil
+    \subfloat[\label{fig:wide_right}]{
+        \includegraphics[width=0.45\textwidth]{figures/example.png}
+    }
+    \caption{Two column subfigures spanning full width.}
+    \label{fig:wide_sidebyside}
+\end{figure*}
+
 % ── Table ───────────────────────────────────────────────────
 \blindtext
 \begin{table}
@@ -90,6 +105,12 @@ void SomeFunction() {
     \item If you need multiple citations, you can use \cite{test, test}.
     \item As shown in listing \ref{lst:example}, the function...
     \item As shown in \cref{fig:sidebyside}, the two figures are side by side.
-    \item The left subfigure \cref{fig:left} shows the first example, while the right subfigure \cref{fig:right} shows the second.
+    \item The left subfigure \cref{fig:left} shows the first example, while the right 
+    subfigure \cref{fig:right} shows the second.
+    \item As shown in \cref{fig:wide_sidebyside}, the full width figure
+    spans both columns. 
+    \item The left subfigure \cref{fig:wide_left} shows
+    the first example, while the right subfigure \cref{fig:wide_right}
+    shows the second.
 \end{itemize}
 \blindtext
