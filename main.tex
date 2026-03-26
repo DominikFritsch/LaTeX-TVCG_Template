@@ -1,6 +1,6 @@
 % ============================================================
 %  maint.tex
-%  Entry point for the LaTeX document.
+%  Entry point for the LaTeX document
 % ============================================================
 
 \documentclass[journal]{IEEEtran}
@@ -15,10 +15,6 @@
 \begin{document}
 % ============================================================
 
-% ── Metadata (Title, Authors, Abstract, Keywords) ───────────
-\input{metadata}
-
-
 % ── Sections ────────────────────────────────────────────────
 \ifgerman
     \selectlanguage{ngerman}
@@ -27,6 +23,10 @@
     \selectlanguage{english}
     \def\lang{en}
 \fi
+
+% ── Metadata (Title, Authors, Abstract, Keywords) ───────────
+\input{metadata}
+
 
 \input{sections/\lang/01_introduction.tex}
 \input{sections/\lang/02_related_work.tex}

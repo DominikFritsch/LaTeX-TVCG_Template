@@ -3,16 +3,15 @@
 %  LaTeX kernel settings & Package configurations
 % ============================================================
 
-% --- Hyphenation ---------------------------------------------
-\hyphenation{IEEE-Xplore
-             Unreal-Engine
-             Frame-lock
-             Gen-lock
-             Switch-board}
-
 % --- Language Toggle -----------------------------------------
 \newif\ifgerman
-\germanfalse          % ← change to \germanfalse for English
+\germanfalse          % ← change to \germantrue for German
+
+
+% --- Hyphenation ---------------------------------------------
+\hyphenation{IEEE-Xplore
+             Post-Script
+             IEEEtran}
 
 
 % --- hyperref ------------------------------------------------
@@ -20,6 +19,7 @@
 % ensures proper identification of the document in PDF viewers, search
 % tools, and digital libraries.
 \hypersetup{
+    pageanchor  = false,
     colorlinks  = true,
     linkcolor   = blue,
     citecolor   = blue,
